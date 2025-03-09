@@ -326,7 +326,7 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
         private val gpsLock = Mutex()
 
         private val retrofit: Retrofit = Retrofit.Builder()
-            .baseUrl("https://xdfyutgivtoadckozjbc.supabase.co") // Replace with your Supabase project URL.
+            .baseUrl("https://yoururl.supabase.co") // Replace with your Supabase project URL.
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 
