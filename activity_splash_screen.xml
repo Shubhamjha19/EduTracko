@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_theme"
+    tools:context=".SplashScreen">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="380sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/edutrack"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageView2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-11dp"
+        android:layout_marginEnd="0dp"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginBottom="2dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/appName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="𝓔𝓭𝓾𝓣𝓻𝓪𝓬𝓴𝓸"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="70sp"/>
+
+        <TextView
+            android:id="@+id/app_slogan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=" Smart Tracking for Student Safety 📍"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+    </LinearLayout>
+</RelativeLayout>

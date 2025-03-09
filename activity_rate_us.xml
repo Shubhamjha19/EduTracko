@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/app_theme"
+    tools:context=".RateUs">
+
+    <ImageView
+        android:id="@+id/rateusbg"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:src="@drawable/rateus"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Rate Us"
+        android:textAlignment="center"
+        android:textColor="#FFAB00"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="We would love to hear your thoughts!"
+        android:textSize="18sp"
+        android:textColor="#FFAB00"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <ImageView
+        android:id="@+id/appLogoImageView"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/welcomeimg" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="EduTracko"
+        android:textStyle="bold"
+        android:textColor="#FFAB00"
+        android:textSize="20sp" />
+
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:progressTint="#FFAB00"
+        android:numStars="5"
+        android:stepSize="1.0" />
+
+    <EditText
+        android:id="@+id/feedbackEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Your feedback"
+        android:textColor="#FFAB00"
+        android:inputType="textMultiLine"
+        android:layout_marginHorizontal="10dp"
+        android:minLines="3" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:backgroundTint="#FFAB00"
+        android:text="Submit" />
+
+</LinearLayout>
+
+
+
+

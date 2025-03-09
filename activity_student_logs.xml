@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentLogs"
+    android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:id="@+id/studentDetailsLogs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            >
+
+            <!-- Student Image -->
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ivStudentImage"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="centerCrop"
+                android:src="@drawable/student"
+                app:shapeAppearanceOverlay="@style/CircularImageView"
+                tools:ignore="ContentDescription" />
+
+            <!-- Student Name -->
+            <TextView
+                android:id="@+id/tvStudentName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Student Name"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Roll Number -->
+            <TextView
+                android:id="@+id/tvRollNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textStyle="bold"
+                android:text="Roll No: "
+                android:textSize="16sp" />
+
+            <!-- Class -->
+            <TextView
+                android:id="@+id/tvClass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textStyle="bold"
+                android:text="Class: "
+                android:textSize="16sp" />
+
+            <!-- Phone Number -->
+            <TextView
+                android:id="@+id/tvPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textStyle="bold"
+                android:text="Phone: "
+                android:textSize="16sp" />
+
+            <!-- Parents' Number -->
+            <TextView
+                android:id="@+id/tvParentsNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textStyle="bold"
+                android:text="Parent Number: "
+                android:textSize="16sp" />
+
+            <!-- PRN Number -->
+            <TextView
+                android:id="@+id/tvPrnNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textStyle="bold"
+                android:text="PRN: "
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/studentlogsheadings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@id/studentDetailsLogs"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/border"
+        >
+
+        <TextView
+            android:id="@+id/logstitle"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:text="Title "
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/logsmsg"
+            android:layout_width="220dp"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:text="Message"
+            android:textAlignment="center"
+
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/logsdate"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:text="Date"
+            android:textAlignment="center"
+            android:textSize="16sp"
+
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,TextSizeCheck" />
+
+    </LinearLayout>
+
+
+
+
+
+    <!-- RecyclerView for Students -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/studentLogsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="6dp"
+        android:layout_margin="6dp"
+        app:layout_constraintTop_toBottomOf="@id/studentlogsheadings"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

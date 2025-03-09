@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeScreen">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:gravity="center">
+
+        <!-- Header Text -->
+        <TextView
+            android:id="@+id/welcomeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome"
+            android:textColor="@color/app_theme"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Subtitle -->
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login or signup to continue"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Illustration -->
+        <ImageView
+            android:id="@+id/welcomeImage"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:src="@drawable/welcomeimg"
+            android:layout_marginBottom="20dp"
+            android:scaleType="fitXY"
+            android:contentDescription="Welcome Image" />
+
+        <!-- App Title -->
+        <TextView
+            android:id="@+id/appName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SafeEduTrack"
+            android:textColor="@color/app_theme"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="8dp" />
+
+        <!-- App Tagline -->
+        <TextView
+            android:id="@+id/appTagline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A Family Scheduling App For Parents"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Create Account Button -->
+        <Button
+            android:id="@+id/createAccountButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="16dp"
+            android:text="Create Account"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/app_theme"
+            android:textSize="20sp" />
+
+        <!-- Already Have an Account Button -->
+<!--        <TextView-->
+<!--            android:id="@+id/loginButton"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="24dp"-->
+<!--            android:layout_marginEnd="24dp"-->
+<!--            android:layout_marginBottom="16dp"-->
+<!--            android:text="Already have an account"-->
+<!--            android:textColor="@color/app_theme"-->
+<!--            android:backgroundTint="@color/white"-->
+<!--            android:textSize="16sp"-->
+<!--            android:strokeColor="@color/app_theme" />-->
+
+        <TextView
+            android:id="@+id/alreadyacc"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Already have an account"
+            android:textColor="@color/app_theme"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:background="@drawable/edit_text_background"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="16dp" />
+
+
+                <!-- Continue as Guest -->
+<!--        <TextView-->
+<!--            android:id="@+id/guestLogin"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Continue as a guest?"-->
+<!--            android:textColor="@color/darkGray"-->
+<!--            android:textSize="14sp"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_marginTop="8dp" />-->
+    </LinearLayout>
+
+</LinearLayout>

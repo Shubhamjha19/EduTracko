@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ParentLogin">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="vertical">
+
+            <!-- Back Arrow and Theme Toggle -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/parent_barrow"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/arrow_back"
+                    app:tint="#4266F9" />
+            </LinearLayout>
+
+            <!-- Title -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Login as Parent"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="@color/app_theme" />
+
+            <!-- Subtitle -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Welcome Back!"
+                android:textSize="18sp"
+                android:textColor="@color/black" />
+
+            <!-- Email / Mobile Number -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Child's Email Address"
+                android:textSize="14sp"
+                android:textColor="@color/black"  />
+
+            <EditText
+                android:id="@+id/parent_emailEdit"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="8dp"
+                android:hint="Enter email address"
+                android:background="@drawable/edit_text_background"
+                android:padding="12dp"
+                android:textColor="@color/app_theme"
+                android:textSize="14sp" />
+
+            <!-- Password -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Parent Number"
+                android:textSize="14sp"
+                android:textColor="@color/black"  />
+
+            <EditText
+                android:id="@+id/parent_passwordEdit"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="8dp"
+                android:hint="Enter parent phone number"
+                android:background="@drawable/edit_text_background"
+                android:padding="12dp"
+                android:textSize="14sp"
+                android:textColor="@color/app_theme"
+                android:drawableEnd="@drawable/ic_eye_closed"
+                android:drawableTint="#4266F9"
+                android:inputType="textPassword" />
+
+            <TextView
+                android:id="@+id/parent_forgotpass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forgot Password?"
+                android:textColor="@color/app_theme"
+                android:layout_gravity="end"
+                android:textStyle="bold" />
+
+            <!-- Privacy Policy Checkbox -->
+            <CheckBox
+                android:id="@+id/parent_loginCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Keep me logged in"
+                android:textSize="14sp"
+                android:textColor="@color/black"  />
+
+            <!-- Sign Up Button -->
+            <Button
+                android:id="@+id/parent_loginButton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#3A76F0"
+                android:text="Sign In"
+                app:cornerRadius="1dp"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Social Sign-Up Options -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="22dp"
+                android:gravity="center"
+                android:weightSum="3"/>
+
+            <!-- Already Have Account Link -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HelpScreen">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            >
+
+            <!-- Header Image -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:src="@drawable/helpimg"
+                android:scaleType="fitXY"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Need Help?"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/app_theme"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:padding="10dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"/>
+
+            <!-- FAQ Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Frequently Asked Questions"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/app_theme"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="✔ How do I track my child?"
+                android:textSize="16sp"
+                android:paddingTop="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="✔ What should I do if GPS is not working?"
+                android:textSize="16sp"
+                android:paddingTop="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="✔ How do I set up Geo-Fencing?"
+                android:textSize="16sp"
+                android:paddingTop="4dp"/>
+
+            <!-- How to Use Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="How to Use EduTracko?"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/app_theme"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="✔ Step 1: Open EduTracko and select your role (Admin/Student/Parent)"
+                android:textSize="16sp"
+                android:paddingTop="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="✔ Step 2: If Student or Parent, register/login to your account"
+                android:textSize="16sp"
+                android:paddingTop="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="✔ Step 3: Students enter their details to complete the profile setup"
+                android:textSize="16sp"
+                android:paddingTop="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="✔ Step 4: Students access the Student Dashboard after setup"
+                android:textSize="16sp"
+                android:paddingTop="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="✔ Step 5: Parents log in to access the Parent Dashboard"
+                android:textSize="16sp"
+                android:paddingTop="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="✔ Step 6: Parents can track their child's real-time location"
+                android:textSize="16sp"
+                android:paddingTop="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="✔ Step 7: Parents receive notifications for entry/exit, low battery, and GPS disabled"
+                android:textSize="16sp"
+                android:paddingTop="4dp"/>
+
+
+            <!-- Contact Support Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Still Need Help?"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email us at support@edutracko.com"
+                android:textSize="16sp"
+                android:paddingTop="4dp"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

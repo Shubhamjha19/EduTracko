@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerificationScreen"
+    android:layout_margin="15dp"
+    android:orientation="vertical">
+
+    <!-- Back Arrow -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/arrow_back"
+            app:tint="#4266F9" />
+    </LinearLayout>
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verification"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/app_theme" />
+
+    <!-- Subtitle -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter the code to continue."
+        android:paddingBottom="10dp"
+        android:textColor="@color/black" />
+
+    <!-- Verification Image -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/verificationimg" />
+
+    <!-- Email Info -->
+    <TextView
+        android:id="@+id/emailInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:text="     We sent a code to \nyouremail@outlook.com" />
+
+    <!-- OTP Instruction -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please enter the 4-digit code:"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:importantForAccessibility="yes" />
+
+    <!-- OTP Fields -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/otpField1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/edit_text_background"
+            android:inputType="number"
+            android:gravity="center"
+            android:hint="1"
+            android:importantForAccessibility="yes"
+            android:nextFocusForward="@id/otpField2" />
+
+        <EditText
+            android:id="@+id/otpField2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/edit_text_background"
+            android:inputType="number"
+            android:gravity="center"
+            android:hint="2"
+            android:importantForAccessibility="yes"
+            android:layout_marginStart="8dp"
+            android:nextFocusForward="@id/otpField3" />
+
+        <EditText
+            android:id="@+id/otpField3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/edit_text_background"
+            android:inputType="number"
+            android:gravity="center"
+            android:hint="3"
+            android:importantForAccessibility="yes"
+            android:layout_marginStart="8dp"
+            android:nextFocusForward="@id/otpField4" />
+
+        <EditText
+            android:id="@+id/otpField4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/edit_text_background"
+            android:inputType="number"
+            android:gravity="center"
+            android:hint="4"
+            android:importantForAccessibility="yes"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <!-- Continue Button -->
+    <Button
+        android:id="@+id/continueButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        android:layout_gravity="center"
+        android:textSize="18dp"
+        android:backgroundTint="@color/app_theme"
+        android:textColor="@color/white" />
+
+    <!-- Sign Up Option -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:text="Don't have an account?" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Sign Up"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/app_theme" />
+    </LinearLayout>
+
+    <!-- Back to Login -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:minHeight="48dp"
+        android:text="Back to log in?"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+</LinearLayout>

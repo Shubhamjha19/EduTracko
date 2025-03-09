@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border"
+    android:layout_marginTop="4dp"
+
+    >
+    <!-- Notification Title: Left aligned -->
+    <TextView
+        android:id="@+id/parentNotificationTitle"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:text="Title"
+        android:layout_gravity="center_vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/parentNotificationMessage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Notification Message: Centered horizontally -->
+    <TextView
+        android:id="@+id/parentNotificationMessage"
+        android:layout_width="220dp"
+        android:layout_height="30dp"
+        android:textAlignment="center"
+        android:text="Notification"
+        android:gravity="center_horizontal"
+        app:layout_constraintStart_toEndOf="@id/parentNotificationTitle"
+        app:layout_constraintEnd_toStartOf="@id/parentNotificationDate"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Notification Date: Right aligned -->
+    <TextView
+        android:id="@+id/parentNotificationDate"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:text="Sent at"
+        android:layout_gravity="center_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/parentNotificationMessage"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

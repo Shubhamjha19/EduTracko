@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border"
+    android:layout_marginTop="4dp"
+
+    >
+    <TextView
+        android:id="@+id/adminNotificationTitle"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:text="Title"
+        android:gravity="center_horizontal"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/adminNotificationMessage"
+        app:layout_constraintBaseline_toBaselineOf="@id/adminNotificationMessage"
+         />
+
+    <!-- Notification Message: Centered horizontally between title and date -->
+    <TextView
+        android:id="@+id/adminNotificationMessage"
+        android:layout_width="220dp"
+        android:layout_height="30dp"
+        android:text="Notification"
+        android:gravity="center_horizontal"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintStart_toEndOf="@id/adminNotificationTitle"
+        app:layout_constraintEnd_toStartOf="@id/adminNotificationDate"
+        app:layout_constraintBaseline_toBaselineOf="@id/adminNotificationTitle" />
+
+    <!-- Notification Date: Right aligned -->
+    <TextView
+        android:id="@+id/adminNotificationDate"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:text="Sent at"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@id/adminNotificationTitle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
