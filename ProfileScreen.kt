@@ -44,7 +44,7 @@ class ProfileScreen : AppCompatActivity() {
     // Declare supabaseService so it can be referenced later.
     private val supabaseService: SupabaseService by lazy {
         Retrofit.Builder()
-            .baseUrl("https://xdfyutgivtoadckozjbc.supabase.co")
+            .baseUrl("https://yoururl.supabase.co")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
             .create(SupabaseService::class.java)
