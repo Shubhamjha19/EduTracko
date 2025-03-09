@@ -40,7 +40,7 @@ class SetNewPasswordScreen : AppCompatActivity() {
 
         // Set up Retrofit for the API call
         val retrofit = Retrofit.Builder()
-            .baseUrl("https://xdfyutgivtoadckozjbc.supabase.co") // Use your Supabase base URL
+            .baseUrl("https://yoururl.supabase.co") // Use your Supabase base URL
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 
