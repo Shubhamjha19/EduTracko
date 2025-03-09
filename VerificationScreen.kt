@@ -44,7 +44,7 @@ class VerificationScreen : AppCompatActivity() {
 
         // Set up Retrofit
         val retrofit = Retrofit.Builder()
-            .baseUrl("https://xdfyutgivtoadckozjbc.supabase.co") // Use your server's URL
+            .baseUrl("https://yoururl.supabase.co") // Use your server's URL
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 
