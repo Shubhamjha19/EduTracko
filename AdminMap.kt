@@ -37,7 +37,7 @@ class AdminMap : AppCompatActivity(), OnMapReadyCallback {
     private lateinit var mMap: GoogleMap
     private lateinit var binding: ActivityAdminMapBinding
     private val retrofit: Retrofit = Retrofit.Builder()
-        .baseUrl("https://xdfyutgivtoadckozjbc.supabase.co") // Replace with your Supabase project URL
+        .baseUrl("https://yoururl.supabase.co") // Replace with your Supabase project URL
         .addConverterFactory(GsonConverterFactory.create())
         .build()
 
