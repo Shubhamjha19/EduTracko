@@ -50,7 +50,7 @@ class AdminDashboard : AppCompatActivity() {
     private lateinit var authHelper: AuthHelper
 
     private val retrofit = Retrofit.Builder()
-        .baseUrl("https://xdfyutgivtoadckozjbc.supabase.co") // Replace with your Supabase base URL.
+        .baseUrl("https://yoururl.supabase.co") // Replace with your Supabase base URL.
         .addConverterFactory(GsonConverterFactory.create())
         .build()
 
