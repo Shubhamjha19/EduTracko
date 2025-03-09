@@ -53,7 +53,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 class MainActivity : AppCompatActivity(), OnMapReadyCallback {
 
     private val retrofit = Retrofit.Builder()
-        .baseUrl("https://xdfyutgivtoadckozjbc.supabase.co") // Replace with your Supabase base URL.
+        .baseUrl("https://yoururl.supabase.co") // Replace with your Supabase base URL.
         .addConverterFactory(GsonConverterFactory.create())
         .build()
 
