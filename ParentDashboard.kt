@@ -66,7 +66,7 @@ class ParentDashboard : AppCompatActivity(), OnMapReadyCallback {
 
         // Create a Retrofit instance for Supabase API calls.
         val retrofit = Retrofit.Builder()
-            .baseUrl("https://xdfyutgivtoadckozjbc.supabase.co")
+            .baseUrl("https://yoururl.supabase.co")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
         supabaseService = retrofit.create(SupabaseService::class.java)
