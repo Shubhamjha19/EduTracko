@@ -177,7 +177,7 @@ class MapsActivity : FragmentActivity(), OnMapReadyCallback {
         }
 
         val retrofit: Retrofit = Retrofit.Builder()
-            .baseUrl("https://xdfyutgivtoadckozjbc.supabase.co")
+            .baseUrl("https://yoururl.supabase.co")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 
