@@ -200,7 +200,7 @@ class ProfileScreen : AppCompatActivity() {
             val success = authHelper.uploadProfileImage(fileName, file.readBytes())
             if (success) {
                 val publicUrl =
-                    "https://xdfyutgivtoadckozjbc.supabase.co/storage/v1/object/public/profile_pics/$fileName"
+                    "https://yoururl.supabase.co/storage/v1/object/public/profile_pics/$fileName"
 
                 // Save profile image URL locally
                 saveProfileImageUrl(publicUrl)
