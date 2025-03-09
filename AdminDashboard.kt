@@ -239,7 +239,7 @@ class AdminNotificationPollingService : Service() {
         super.onCreate()
         Log.d(TAG, "Service onCreate: Initializing Retrofit and AuthHelper.")
         val retrofit = Retrofit.Builder()
-            .baseUrl("https://xdfyutgivtoadckozjbc.supabase.co") // Replace with your Supabase URL.
+            .baseUrl("https://yoururl.supabase.co") // Replace with your Supabase URL.
             .addConverterFactory(GsonConverterFactory.create())
             .build()
         supabaseService = retrofit.create(SupabaseService::class.java)
