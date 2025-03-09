@@ -50,7 +50,7 @@ class StudentLogs : AppCompatActivity() {
 
         // Build Retrofit instance and create your SupabaseService.
         val retrofit = Retrofit.Builder()
-            .baseUrl("https://xdfyutgivtoadckozjbc.supabase.co")
+            .baseUrl("https://yoururl.supabase.co")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
         val supabaseService = retrofit.create(SupabaseService::class.java)
