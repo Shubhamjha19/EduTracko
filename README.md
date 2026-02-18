@@ -15,3 +15,4 @@
     Backend: Supabase (PostgreSQL)
     APIs: Google Maps API, RESTful APIs
     Version Control: Git, GitHub
+    Developers : Shreya Vikas Lande and Shubham Lalit Jha
